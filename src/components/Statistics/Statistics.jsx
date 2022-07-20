@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import { StatsList } from "./StatsList";
+import css from './Statistics.module.css'
 
 export const Statistics = ({title, stats}) => {
     return (
-        <section class="statistics">
-        <h2 class="title">{title}</h2>
+        <section className={css.statistics}>
+            {title.length > 0 && (<h2 className={css.title}>{title}</h2>)}
+            
     
-      <ul class="stat-list">
+            <ul className={css.stat_list}>
                 {stats.map(stat => (<StatsList key={stat.id}
                     label={stat.label}
                     percentage={stat.percentage}/>))}

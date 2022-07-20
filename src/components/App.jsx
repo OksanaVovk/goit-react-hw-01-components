@@ -10,11 +10,13 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: 'auto',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
+        padding: 30,
         color: '#010101'
       }}
     >
@@ -32,6 +34,6 @@ export const App = () => {
 
       <TransactionHistory items={transactions} />
       
-    </div>
+ </div>
   );
 };

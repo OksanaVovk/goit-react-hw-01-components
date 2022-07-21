@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import css from './Statistics.module.css'
 import getRandomHexColor from './colors'
 
-
 export const StatsList = ({id, label, percentage}) => {
     return (<li className={css.item} key={id}
         style={{

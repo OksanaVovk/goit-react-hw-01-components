@@ -14,7 +14,6 @@ export const Statistics = ({title, stats}) => {
                     percentage={stat.percentage}/>))}
      </ul>
 
-
 </section>
     );
 };
